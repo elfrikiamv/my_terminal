@@ -1,0 +1,169 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@8.15.1
+2 info using node@v16.15.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 4ms
+6 timing config:load:builtin Completed in 4ms
+7 timing config:load:cli Completed in 2ms
+8 timing config:load:env Completed in 1ms
+9 timing config:load:file:/mnt/c/big_data/proyects/npm/launch_mod/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 8ms
+11 timing config:load:file:/home/elfrikiamv_k/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 1ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 21ms
+19 timing npm:load:configload Completed in 21ms
+20 timing npm:load:mkdirpcache Completed in 1ms
+21 timing npm:load:mkdirplogs Completed in 1ms
+22 verbose title npm i msmc
+23 verbose argv "i" "msmc"
+24 timing npm:load:setTitle Completed in 1ms
+25 timing config:load:flatten Completed in 3ms
+26 timing npm:load:display Completed in 5ms
+27 verbose logfile logs-max:10 dir:/home/elfrikiamv_k/.npm/_logs
+28 verbose logfile /home/elfrikiamv_k/.npm/_logs/2022-08-06T07_27_02_505Z-debug-0.log
+29 timing npm:load:logFile Completed in 5ms
+30 timing npm:load:timers Completed in 0ms
+31 timing npm:load:configScope Completed in 0ms
+32 timing npm:load Completed in 36ms
+33 timing arborist:ctor Completed in 1ms
+34 silly logfile start cleaning logs, removing 1 files
+35 silly logfile done cleaning log files
+36 timing idealTree:init Completed in 66ms
+37 timing idealTree:userRequests Completed in 3ms
+38 silly idealTree buildDeps
+39 silly fetch manifest msmc@*
+40 timing arborist:ctor Completed in 0ms
+41 http fetch GET 200 https://registry.npmjs.org/msmc 983ms (cache miss)
+42 silly placeDep ROOT msmc@3.1.3 OK for: launch_mod@0.0.1 want: *
+43 silly fetch manifest node-fetch@2.x
+44 http fetch GET 200 https://registry.npmjs.org/node-fetch 129ms (cache miss)
+45 timing idealTree:#root Completed in 1127ms
+46 silly fetch manifest encoding@^0.1.0
+47 http fetch GET 200 https://registry.npmjs.org/encoding 97ms (cache miss)
+48 silly placeDep ROOT node-fetch@2.6.7 OK for: msmc@3.1.3 want: 2.x
+49 silly fetch manifest whatwg-url@^5.0.0
+50 http fetch GET 200 https://registry.npmjs.org/whatwg-url 100ms (cache miss)
+51 timing idealTree:node_modules/msmc Completed in 202ms
+52 silly placeDep ROOT whatwg-url@5.0.0 OK for: node-fetch@2.6.7 want: ^5.0.0
+53 silly fetch manifest tr46@~0.0.3
+54 silly fetch manifest webidl-conversions@^3.0.0
+55 http fetch GET 200 https://registry.npmjs.org/tr46 116ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 165ms (cache miss)
+57 timing idealTree:node_modules/node-fetch Completed in 168ms
+58 silly placeDep ROOT tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+59 silly placeDep ROOT webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+60 timing idealTree:node_modules/whatwg-url Completed in 2ms
+61 timing idealTree:node_modules/tr46 Completed in 0ms
+62 timing idealTree:node_modules/webidl-conversions Completed in 0ms
+63 timing idealTree:buildDeps Completed in 1501ms
+64 timing idealTree:fixDepFlags Completed in 1ms
+65 timing idealTree Completed in 1572ms
+66 timing reify:loadTrees Completed in 1574ms
+67 timing reify:diffTrees Completed in 23ms
+68 silly reify moves {}
+69 timing reify:retireShallow Completed in 1ms
+70 timing reify:createSparse Completed in 10ms
+71 timing reify:loadBundles Completed in 0ms
+72 silly audit bulk request {
+72 silly audit   'adm-zip': [ '0.4.16' ],
+72 silly audit   ajv: [ '6.12.6' ],
+72 silly audit   asn1: [ '0.2.6' ],
+72 silly audit   'assert-plus': [ '1.0.0' ],
+72 silly audit   asynckit: [ '0.4.0' ],
+72 silly audit   'aws-sign2': [ '0.7.0' ],
+72 silly audit   aws4: [ '1.11.0' ],
+72 silly audit   'bcrypt-pbkdf': [ '1.0.2' ],
+72 silly audit   caseless: [ '0.12.0' ],
+72 silly audit   checksum: [ '0.1.1' ],
+72 silly audit   'combined-stream': [ '1.0.8' ],
+72 silly audit   'core-util-is': [ '1.0.2' ],
+72 silly audit   dashdash: [ '1.14.1' ],
+72 silly audit   'delayed-stream': [ '1.0.0' ],
+72 silly audit   'ecc-jsbn': [ '0.1.2' ],
+72 silly audit   extend: [ '3.0.2' ],
+72 silly audit   extsprintf: [ '1.3.0' ],
+72 silly audit   'fast-deep-equal': [ '3.1.3' ],
+72 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+72 silly audit   'forever-agent': [ '0.6.1' ],
+72 silly audit   'form-data': [ '2.3.3' ],
+72 silly audit   getpass: [ '0.1.7' ],
+72 silly audit   'har-schema': [ '2.0.0' ],
+72 silly audit   'har-validator': [ '5.1.5' ],
+72 silly audit   'http-signature': [ '1.2.0' ],
+72 silly audit   'is-typedarray': [ '1.0.0' ],
+72 silly audit   isstream: [ '0.1.2' ],
+72 silly audit   jsbn: [ '0.1.1' ],
+72 silly audit   'json-schema': [ '0.4.0' ],
+72 silly audit   'json-schema-traverse': [ '0.4.1' ],
+72 silly audit   'json-stringify-safe': [ '5.0.1' ],
+72 silly audit   jsprim: [ '1.4.2' ],
+72 silly audit   'mime-db': [ '1.52.0' ],
+72 silly audit   'mime-types': [ '2.1.35' ],
+72 silly audit   'minecraft-launcher-core': [ '3.16.13' ],
+72 silly audit   'oauth-sign': [ '0.9.0' ],
+72 silly audit   optimist: [ '0.3.7' ],
+72 silly audit   'performance-now': [ '2.1.0' ],
+72 silly audit   psl: [ '1.9.0' ],
+72 silly audit   punycode: [ '2.1.1' ],
+72 silly audit   qs: [ '6.5.3' ],
+72 silly audit   request: [ '2.88.2' ],
+72 silly audit   uuid: [ '3.4.0', '8.3.2' ],
+72 silly audit   'safe-buffer': [ '5.2.1' ],
+72 silly audit   'safer-buffer': [ '2.1.2' ],
+72 silly audit   sshpk: [ '1.17.0' ],
+72 silly audit   'tough-cookie': [ '2.5.0' ],
+72 silly audit   'tunnel-agent': [ '0.6.0' ],
+72 silly audit   tweetnacl: [ '0.14.5' ],
+72 silly audit   'uri-js': [ '4.4.1' ],
+72 silly audit   verror: [ '1.10.0' ],
+72 silly audit   wordwrap: [ '0.0.3' ],
+72 silly audit   msmc: [ '3.1.3' ],
+72 silly audit   'node-fetch': [ '2.6.7' ],
+72 silly audit   'whatwg-url': [ '5.0.0' ],
+72 silly audit   tr46: [ '0.0.3' ],
+72 silly audit   'webidl-conversions': [ '3.0.1' ]
+72 silly audit }
+73 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz. Extracting by manifest.
+74 silly tarball no local data for webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz. Extracting by manifest.
+75 silly tarball no local data for tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz. Extracting by manifest.
+76 silly tarball no local data for whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz. Extracting by manifest.
+77 silly tarball no local data for msmc@https://registry.npmjs.org/msmc/-/msmc-3.1.3.tgz. Extracting by manifest.
+78 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.6.7.tgz 123ms (cache miss)
+79 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 146ms
+80 timing auditReport:getReport Completed in 150ms
+81 silly audit report {}
+82 timing auditReport:init Completed in 0ms
+83 timing reify:audit Completed in 150ms
+84 timing reifyNode:node_modules/node-fetch Completed in 147ms
+85 http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 229ms (cache miss)
+86 timing reifyNode:node_modules/webidl-conversions Completed in 252ms
+87 http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 239ms (cache miss)
+88 timing reifyNode:node_modules/whatwg-url Completed in 269ms
+89 http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 264ms (cache miss)
+90 timing reifyNode:node_modules/tr46 Completed in 287ms
+91 http fetch GET 200 https://registry.npmjs.org/msmc/-/msmc-3.1.3.tgz 826ms (cache miss)
+92 timing reifyNode:node_modules/msmc Completed in 859ms
+93 timing reify:unpack Completed in 860ms
+94 timing reify:unretire Completed in 0ms
+95 timing build:queue Completed in 6ms
+96 timing build:deps Completed in 8ms
+97 timing build Completed in 9ms
+98 timing reify:build Completed in 11ms
+99 timing reify:trash Completed in 0ms
+100 timing reify:save Completed in 31ms
+101 timing reify Completed in 2548ms
+102 silly ADD node_modules/webidl-conversions
+103 silly ADD node_modules/tr46
+104 silly ADD node_modules/whatwg-url
+105 silly ADD node_modules/node-fetch
+106 silly ADD node_modules/msmc
+107 timing command:i Completed in 2557ms
+108 verbose exit 0
+109 timing npm Completed in 2644ms
+110 info ok

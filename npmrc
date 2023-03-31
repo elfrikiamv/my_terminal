@@ -1,0 +1,5 @@
+init-license=MIT
+init-author-name=elfrikiamv
+init-author-email=elfrikiamv@gmail.com
+init-version=0.0.1
+init-main=src/index.js
